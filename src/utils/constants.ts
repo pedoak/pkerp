@@ -1,0 +1,21 @@
+export const DEFAULT_VALUES = {
+  ICMS: 12,
+  IPI: 0,
+  PRAZO_MEDIO: 30,
+  PESO_SACO: 25
+} as const;
+
+export const STATUS = {
+  ATIVO: 'ATIVA',
+  MANUTENCAO: 'MANUTENCAO',
+  INATIVO: 'INATIVA'
+} as const;
+
+export const TIPOS_INSUMO = {
+  PEBD_CONVENCIONAL: 'PEBD CONVENCIONAL',
+  PEBD_INDUSTRIAL: 'PEBD INDUSTRIAL',
+  PEBDL: 'PEBDL',
+  MPEBDL: 'mPEBDL',
+  PEAD: 'PEAD',
+  ADITIVO: 'ADITIVO'
+} as const;
