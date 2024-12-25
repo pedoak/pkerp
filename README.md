@@ -11,6 +11,30 @@ Sistema web para gerenciamento de processos de extrusão, incluindo controle de 
 - Controle de máquinas
 - Sistema de autenticação e autorização
 
+## Como fazer deploy
+
+1. Clone o repositório
+```bash
+git clone https://github.com/pedoak/pkerp.git
+cd pkerp
+```
+
+2. Instale as dependências
+```bash
+npm install
+```
+
+3. Configure as variáveis de ambiente no arquivo `.env`:
+```env
+VITE_SUPABASE_URL=sua_url_do_supabase
+VITE_SUPABASE_ANON_KEY=sua_chave_anon_do_supabase
+```
+
+4. Inicie o servidor
+```bash
+npm run dev
+```
+
 ## Tecnologias
 
 - React + TypeScript
