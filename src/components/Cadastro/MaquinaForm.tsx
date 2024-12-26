@@ -18,7 +18,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="bg-white p-6 rounded-lg shadow-md">
       <div className="flex items-center mb-6">
-        <Cog className="w-6 h-6 text-blue-600 mr-2" />
+        <Cog className="w-6 h-6 text-yellow-600 mr-2" />
         <h2 className="text-xl font-semibold">
           {maquinaEmEdicao ? 'Editar Máquina' : 'Nova Máquina'}
         </h2>
@@ -29,7 +29,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
           <label className="block text-sm font-medium text-gray-700">Nome da Máquina</label>
           <input
             {...register('nome')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           />
         </div>
@@ -38,7 +38,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
           <label className="block text-sm font-medium text-gray-700">Tipo de Máquina</label>
           <select
             {...register('tipo')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           >
             <option value="EXTRUSORA">Extrusora</option>
@@ -54,7 +54,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
           <label className="block text-sm font-medium text-gray-700">Modelo</label>
           <input
             {...register('modelo')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           />
         </div>
@@ -63,7 +63,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
           <label className="block text-sm font-medium text-gray-700">Fabricante</label>
           <input
             {...register('fabricante')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           />
         </div>
@@ -73,7 +73,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
           <input
             type="number"
             {...register('ano_fabricacao')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           />
         </div>
@@ -86,7 +86,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
             type="number"
             step="0.01"
             {...register('capacidade_producao')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           />
         </div>
@@ -99,7 +99,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
             type="number"
             step="0.01"
             {...register('potencia_instalada')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           />
         </div>
@@ -112,7 +112,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
             type="number"
             step="0.01"
             {...register('potencia_producao')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           />
         </div>
@@ -121,7 +121,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
           <label className="block text-sm font-medium text-gray-700">Status</label>
           <select
             {...register('status')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             required
           >
             <option value="ATIVA">Ativa</option>
@@ -134,7 +134,7 @@ export const MaquinaForm = ({ onSubmit, maquinaEmEdicao }: MaquinaFormProps) => 
       <div className="mt-6">
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          className="w-full bg-yellow-600 text-white py-2 px-4 rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
         >
           {maquinaEmEdicao ? 'Atualizar Máquina' : 'Cadastrar Máquina'}
         </button>

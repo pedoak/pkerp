@@ -4,12 +4,11 @@ import { Fornecedor } from '../../types/fornecedor';
 
 interface FornecedoresFormProps {
   onSubmit: (data: Fornecedor) => Promise<void>;
-  fornecedorEmEdicao: Fornecedor | null;
 }
 
-export const FornecedoresForm = ({ onSubmit, fornecedorEmEdicao }: FornecedoresFormProps) => {
+export const FornecedoresForm = ({ onSubmit }: FornecedoresFormProps) => {
   const { register, handleSubmit, watch, reset } = useForm<Fornecedor>({
-    defaultValues: fornecedorEmEdicao || {
+    defaultValues: {
       frete_incluso: false,
       custo_frete: 0,
       prazo_medio_dias: 30
@@ -21,9 +20,9 @@ export const FornecedoresForm = ({ onSubmit, fornecedorEmEdicao }: FornecedoresF
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
       <div className="flex items-center mb-6">
-        <Building2 className="w-6 h-6 text-blue-600 mr-2" />
+        <Building2 className="w-6 h-6 text-yellow-600 mr-2" />
         <h2 className="text-xl font-semibold">
-          {fornecedorEmEdicao ? 'Editar Fornecedor' : 'Novo Fornecedor'}
+          Novo Fornecedor
         </h2>
       </div>
 
@@ -35,7 +34,7 @@ export const FornecedoresForm = ({ onSubmit, fornecedorEmEdicao }: FornecedoresF
             </label>
             <input
               {...register('nome')}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
               required
             />
           </div>
@@ -46,7 +45,7 @@ export const FornecedoresForm = ({ onSubmit, fornecedorEmEdicao }: FornecedoresF
             </label>
             <select
               {...register('estado')}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
               required
             >
               <option value="">Selecione um estado</option>
@@ -88,7 +87,7 @@ export const FornecedoresForm = ({ onSubmit, fornecedorEmEdicao }: FornecedoresF
               type="number"
               min="0"
               {...register('prazo_medio_dias')}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
               required
             />
           </div>
@@ -98,7 +97,7 @@ export const FornecedoresForm = ({ onSubmit, fornecedorEmEdicao }: FornecedoresF
               <input
                 type="checkbox"
                 {...register('frete_incluso')}
-                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                className="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-gray-300 rounded"
               />
               <label className="ml-2 block text-sm text-gray-700">
                 Frete Incluso no Preço
@@ -116,7 +115,7 @@ export const FornecedoresForm = ({ onSubmit, fornecedorEmEdicao }: FornecedoresF
                 step="0.01"
                 min="0"
                 {...register('custo_frete')}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
               />
             </div>
           )}
@@ -126,15 +125,15 @@ export const FornecedoresForm = ({ onSubmit, fornecedorEmEdicao }: FornecedoresF
           <button
             type="button"
             onClick={() => reset()}
-            className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
           >
             Limpar
           </button>
           <button
             type="submit"
-            className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="px-4 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
           >
-            {fornecedorEmEdicao ? 'Atualizar' : 'Cadastrar'} Fornecedor
+            Cadastrar Fornecedor
           </button>
         </div>
       </form>

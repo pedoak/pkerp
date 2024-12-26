@@ -139,7 +139,7 @@ export const Cadastro = () => {
           <h1 className="text-3xl font-bold text-gray-900">Cadastros</h1>
           <button
             onClick={handleToggleForm}
-            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+            className="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700"
           >
             {showForm ? 'Voltar para Lista' : 'Novo Cadastro'}
           </button>
@@ -173,7 +173,6 @@ export const Cadastro = () => {
             showForm ? (
               <FornecedoresForm 
                 onSubmit={handleSubmit}
-                fornecedores={fornecedores}
               />
             ) : (
               <FornecedoresList 

@@ -1,5 +1,3 @@
-import { Switch } from 'lucide-react';
-
 interface IOSToggleProps {
   checked: boolean;
   onChange: (checked: boolean) => void;
@@ -14,7 +12,7 @@ export const IOSToggle = ({ checked, onChange, label }: IOSToggleProps) => {
       )}
       <div 
         className={`relative w-11 h-6 rounded-full transition-colors duration-200 ease-in-out ${
-          checked ? 'bg-blue-600' : 'bg-gray-200'
+          checked ? 'bg-yellow-600' : 'bg-gray-200'
         }`}
         onClick={() => onChange(!checked)}
       >

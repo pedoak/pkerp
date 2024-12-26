@@ -58,7 +58,7 @@ export const FormulacaoReceita = ({
               type="text"
               id="nome"
               {...register('nome')}
-              className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
               placeholder="Ex: PE Linear 2124"
             />
           </div>
@@ -71,7 +71,7 @@ export const FormulacaoReceita = ({
               type="text"
               id="descricao"
               {...register('descricao')}
-              className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
               placeholder="Ex: Filme para embalagem flexível"
             />
           </div>
@@ -86,7 +86,7 @@ export const FormulacaoReceita = ({
             <button
               type="button"
               onClick={() => append({ insumoId: '', percentual: 0 })}
-              className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700"
+              className="inline-flex items-center gap-1 text-sm text-yellow-600 hover:text-yellow-700"
             >
               <PlusCircle className="w-4 h-4" />
               Adicionar Insumo
@@ -99,7 +99,7 @@ export const FormulacaoReceita = ({
                 <div className="flex-1">
                   <select
                     {...register(`itens.${index}.insumoId`)}
-                    className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                    className="w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
                   >
                     <option value="">Selecione um insumo</option>
                     {insumos.map((insumo) => (
@@ -114,7 +114,7 @@ export const FormulacaoReceita = ({
                     <input
                       type="number"
                       {...register(`itens.${index}.percentual`)}
-                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 pr-8"
+                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 pr-8"
                       min="0"
                       max="100"
                       step="0.01"
@@ -152,7 +152,7 @@ export const FormulacaoReceita = ({
             <button
               type="submit"
               disabled={loading || totalPercentual !== 100}
-              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <>

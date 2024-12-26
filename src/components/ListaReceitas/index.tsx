@@ -46,7 +46,7 @@ export const ListaReceitas = ({
         <div 
           key={receita.id} 
           className={`bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow ${
-            selectedReceitaId === receita.id ? 'ring-2 ring-blue-500' : ''
+            selectedReceitaId === receita.id ? 'ring-2 ring-yellow-500' : ''
           }`}
         >
           <div className="flex justify-between items-start mb-3">
@@ -60,7 +60,7 @@ export const ListaReceitas = ({
               <button
                 onClick={() => onSelect(receita)}
                 className={`p-1 rounded hover:bg-gray-100 ${
-                  selectedReceitaId === receita.id ? 'text-blue-600' : 'text-gray-500'
+                  selectedReceitaId === receita.id ? 'text-yellow-600' : 'text-gray-500'
                 }`}
                 title="Visualizar Ficha"
               >
@@ -75,14 +75,14 @@ export const ListaReceitas = ({
               </button>
               <button
                 onClick={() => onEdit(receita)}
-                className="p-1 rounded text-gray-500 hover:bg-gray-100"
+                className="p-1 rounded text-yellow-600 hover:text-yellow-800"
                 title="Editar"
               >
                 <Pencil className="w-4 h-4" />
               </button>
               <button
                 onClick={() => onDelete(receita.id!)}
-                className="p-1 rounded text-gray-500 hover:bg-gray-100"
+                className="p-1 rounded text-yellow-600 hover:text-yellow-800"
                 title="Excluir"
               >
                 <Trash2 className="w-4 h-4" />

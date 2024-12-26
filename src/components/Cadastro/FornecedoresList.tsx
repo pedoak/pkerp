@@ -29,7 +29,7 @@ export const FornecedoresList = ({ fornecedores, onEdit, onDelete }: Fornecedore
           <div key={fornecedor.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
             <div className="flex justify-between items-start mb-4">
               <div className="flex items-center">
-                <Building2 className="w-5 h-5 text-blue-600 mr-2" />
+                <Building2 className="w-5 h-5 text-yellow-600 mr-2" />
                 <h3 className="text-lg font-semibold text-gray-900">{fornecedor.nome}</h3>
               </div>
               <div className="flex space-x-2">
@@ -42,7 +42,7 @@ export const FornecedoresList = ({ fornecedores, onEdit, onDelete }: Fornecedore
                 </button>
                 <button
                   onClick={() => onEdit(fornecedor)}
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-yellow-600 hover:text-yellow-800"
                   title="Editar"
                 >
                   <Pencil className="w-5 h-5" />

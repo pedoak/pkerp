@@ -49,7 +49,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Nome do Insumo</label>
           <input
             {...register('nome')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           />
         </div>
 
@@ -57,7 +57,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Grade</label>
           <input
             {...register('grade')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           />
         </div>
 
@@ -65,7 +65,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Tipo</label>
           <select
             {...register('tipo')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           >
             <option value="PEBD CONVENCIONAL">PEBD CONVENCIONAL</option>
             <option value="PEBD INDUSTRIAL">PEBD INDUSTRIAL</option>
@@ -80,7 +80,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Origem</label>
           <select
             {...register('origem')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           >
             <option value="VIRGEM">VIRGEM</option>
             <option value="RECICLADO">RECICLADO</option>
@@ -93,7 +93,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
             type="number"
             step="0.001"
             {...register('densidade')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           />
         </div>
 
@@ -103,7 +103,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
             type="number"
             step="0.01"
             {...register('indiceFluidez')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           />
         </div>
 
@@ -111,7 +111,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Comonômero</label>
           <select
             {...register('comonomero')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           >
             <option value="N/A">N/A</option>
             <option value="BUTENO">BUTENO</option>
@@ -124,7 +124,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Catalisador</label>
           <select
             {...register('catalisador')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           >
             <option value="N/A">N/A</option>
             <option value="ZIEGLER-NATTA">ZIEGLER-NATTA</option>
@@ -136,7 +136,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Deslizante</label>
           <select
             {...register('deslizante')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           >
             <option value="NÃO">NÃO</option>
             <option value="SIM">SIM</option>
@@ -149,7 +149,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
             <input
               type="number"
               {...register('deslizantePPM')}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             />
           </div>
         )}
@@ -158,7 +158,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Auxiliar de Fluxo</label>
           <select
             {...register('auxiliarFluxo')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           >
             <option value="NÃO">NÃO</option>
             <option value="SIM">SIM</option>
@@ -171,7 +171,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
             <input
               type="number"
               {...register('auxiliarFluxoPPM')}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             />
           </div>
         )}
@@ -180,7 +180,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
           <label className="block text-sm font-medium text-gray-700">Antibloqueio</label>
           <select
             {...register('antibloqueio')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           >
             <option value="NÃO">NÃO</option>
             <option value="SIM">SIM</option>
@@ -193,7 +193,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
             <input
               type="number"
               {...register('antibloqueioPPM')}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
             />
           </div>
         )}
@@ -203,7 +203,7 @@ export const InsumoForm = ({ onSubmit, loading, insumoEmEdicao }: InsumoFormProp
         <button
           type="submit"
           disabled={loading}
-          className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          className="inline-flex items-center px-4 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
         >
           <Plus className="w-5 h-5 mr-2" />
           {insumoEmEdicao ? 'Atualizar Insumo' : 'Adicionar Insumo'}
